@@ -1,18 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "JulieEdwardsJewellery", "..\", "{249F243B-0C37-4D74-8F77-2AFC55BDBAF2}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "JulieEdwardsJewellery", ".", "{249F243B-0C37-4D74-8F77-2AFC55BDBAF2}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/JulieEdwardsJewellery"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\_GitHub\JulieEdwardsJewellery\"
+		Debug.AspNetCompiler.PhysicalPath = "..\JulieEdwardsJewellery\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\JulieEdwardsJewellery\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/JulieEdwardsJewellery"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\_GitHub\JulieEdwardsJewellery\"
+		Release.AspNetCompiler.PhysicalPath = "..\JulieEdwardsJewellery\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\JulieEdwardsJewellery\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
