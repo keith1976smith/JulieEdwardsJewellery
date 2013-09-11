@@ -7,9 +7,22 @@
 }
 body {
   font-family: 'rns_cameliaregular';
-  font-weight: normal;
+  font-weight: 100;
   font-style: normal;
+  font-size: 14px;
+  color: #98a9a9;
 }
-a {
-  color: #00B7FF;
+h1 {
+  font-family: 'rns_cameliaregular';
+  font-weight: 100;
+  font-style: normal;
+  font-size: 72px;
+  color: #99c4bf;
+}
+h2 {
+  font-family: 'rns_cameliaregular';
+  font-weight: 100;
+  font-style: normal;
+  font-size: 48px;
+  color: #e7183e;
 }
