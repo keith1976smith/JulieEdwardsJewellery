@@ -1,9 +1,22 @@
 doctype
 html
 	head
-		title= title
-		link(rel='stylesheet', href='/stylesheets/style.css')
+
+		title= title1
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css", rel="stylesheet", media="screen")
+		link(href="/stylesheets/style.css", rel="stylesheet")
+
+	body
+
+		div.container
+			div.row
+				h1= title1
+				h2= title2
+			div.row
+				block content
+
 		script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
 		script(src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js")
-	body
-		block content
+		script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+		
