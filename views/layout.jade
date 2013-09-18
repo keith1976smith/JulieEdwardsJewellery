@@ -10,10 +10,13 @@ html
 	body
 
 		div.container
-			div.row
-				h1= title1
-				h2= title2
-			div.row
+			div#heading.row
+				#heading-image
+					img(src="/images/Bird.png", alt="Bird.png")
+				#heading-text
+					h1= title1
+					h2= title2
+			div#navigation.row
 				div.navbar.navbar-default(role="nagivation")
 					div.collapse.navbar-collapse.navbar-ex1-collapse
 						ul.nav.navbar-nav
