@@ -10,6 +10,25 @@
 
 }
 
+@import "/animation/animations.less";
+@import "/animation/slide-fade-in.less";
+
+/*.slide-fade-in() {
+    from {
+        top: -10px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}*/
+
+.slideInAnimation() {
+    
+}
+
 @julie-blue: #99c4bf;
 @julie-red: #e7183e;
 @julie-grey: #98a9a9;
@@ -17,7 +36,6 @@
 
 
 .julie-font (@size: 14px, @color: @julie-grey, @letter-spacing: 1px) {
-    //font-family: 'rns_cameliaregular';
     font-weight: 100;
     font-style: normal;
     font-size: @size;
@@ -31,15 +49,25 @@ body {
 
 h1 {
     .julie-font(60px, @julie-blue, -2px);
+    .animation(slide-fade-in .25s linear .1s );
+    .animation-fill-mode(forwards);
 	margin-top: 0px;
-	margin-bottom: 0px
+	margin-bottom: 0px;
+    position: relative;
+    top: -10px;
+    opacity: 0;
 }
 
 h2 {
-    .julie-font(33px, @julie-red, 5px);
+    .julie-font(40px, @julie-red);
+    .animation(slide-fade-in .25s linear);
+    .animation-fill-mode(forwards);
 	margin-top: 0px;
-	margin-left: 29px;
+	margin-left: 21px;
 	margin-bottom: 0px;
+    position: relative;
+    top: -10px;
+    opacity: 0;
 }
 
 #heading {
@@ -51,8 +79,6 @@ h2 {
 	float: left; 
 	img{
 		margin-left: 5px;
-		margin-top: 0px;
-		margin-bottom: 0px;
 		height: 66px;
 	}
 }

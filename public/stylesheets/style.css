@@ -5,6 +5,67 @@
   font-weight: normal;
   font-style: normal;
 }
+@-webkit-keyframes slide-fade-in {
+  from {
+    top: -10px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+@-moz-keyframes slide-fade-in {
+  from {
+    top: -10px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+@-ms-keyframes slide-fade-in {
+  from {
+    top: -10px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+@-o-keyframes slide-fade-in {
+  from {
+    top: -10px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+@keyframes slide-fade-in {
+  from {
+    top: -10px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+/*.slide-fade-in() {
+    from {
+        top: -10px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}*/
 body {
   font-weight: 100;
   font-style: normal;
@@ -18,18 +79,44 @@ h1 {
   font-size: 60px;
   color: #99c4bf;
   letter-spacing: -2px;
+  -webkit-animation: slide-fade-in 0.25s linear 0.1s;
+  -moz-animation: slide-fade-in 0.25s linear 0.1s;
+  -ms-animation: slide-fade-in 0.25s linear 0.1s;
+  -o-animation: slide-fade-in 0.25s linear 0.1s;
+  animation: slide-fade-in 0.25s linear 0.1s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   margin-top: 0px;
   margin-bottom: 0px;
+  position: relative;
+  top: -10px;
+  opacity: 0;
 }
 h2 {
   font-weight: 100;
   font-style: normal;
-  font-size: 33px;
+  font-size: 40px;
   color: #e7183e;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
+  -webkit-animation: slide-fade-in 0.25s linear;
+  -moz-animation: slide-fade-in 0.25s linear;
+  -ms-animation: slide-fade-in 0.25s linear;
+  -o-animation: slide-fade-in 0.25s linear;
+  animation: slide-fade-in 0.25s linear;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   margin-top: 0px;
-  margin-left: 29px;
+  margin-left: 21px;
   margin-bottom: 0px;
+  position: relative;
+  top: -10px;
+  opacity: 0;
 }
 #heading {
   margin-top: 30px;
@@ -40,7 +127,5 @@ h2 {
 }
 #heading-image img {
   margin-left: 5px;
-  margin-top: 0px;
-  margin-bottom: 0px;
   height: 66px;
 }
