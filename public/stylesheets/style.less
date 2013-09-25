@@ -13,21 +13,6 @@
 @import "/animation/animations.less";
 @import "/animation/slide-fade-in.less";
 
-/*.slide-fade-in() {
-    from {
-        top: -10px;
-        opacity: 0;
-    }
-
-    to {
-        top: 0px;
-        opacity: 1;
-    }
-}*/
-
-.slideInAnimation() {
-    
-}
 
 @julie-blue: #99c4bf;
 @julie-red: #e7183e;
@@ -43,31 +28,33 @@
 	letter-spacing: @letter-spacing;
 }
 
-body {
-    .julie-font;
-}
 
-h1 {
-    .julie-font(60px, @julie-blue, -2px);
-    .animation(slide-fade-in .25s linear .1s );
-    .animation-fill-mode(forwards);
-	margin-top: 0px;
-	margin-bottom: 0px;
-    position: relative;
-    top: -10px;
-    opacity: 0;
-}
 
-h2 {
-    .julie-font(40px, @julie-red);
-    .animation(slide-fade-in .25s linear);
-    .animation-fill-mode(forwards);
-	margin-top: 0px;
-	margin-left: 21px;
-	margin-bottom: 0px;
-    position: relative;
-    top: -10px;
-    opacity: 0;
+
+#heading-text {
+
+    h1 {
+        .julie-font(60px, @julie-blue, -2px);
+        .animation(slide-fade-in .5s linear .3s );
+        .animation-fill-mode(backwards);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        position: relative;
+        /*top: -10px;
+        opacity: 0;*/
+    }
+
+    h2 {
+        .julie-font(40px, @julie-red);
+        .animation(slide-fade-in .5s linear .1s);
+        .animation-fill-mode(backwards);
+        margin-top: 0px;
+        margin-left: 21px;
+        margin-bottom: 0px;
+        position: relative;
+        /*top: -10px;
+    opacity: 0;*/
+    }
 }
 
 #heading {
@@ -81,5 +68,10 @@ h2 {
 		margin-left: 5px;
 		height: 66px;
 	}
+}
+
+.shadow {
+    box-shadow: 0px 10px 20px @julie-grey;
+    border-bottom-width: 0px;
 }
 
