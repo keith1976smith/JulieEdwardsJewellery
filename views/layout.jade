@@ -4,7 +4,6 @@ html
 
 		title Julie Edwards
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
-		link(href="/stylesheets/vendor/bootstrap.min.css", rel="stylesheet", media="screen")
 		link(href="/stylesheets/style.css", rel="stylesheet")
 		script(src="/javascripts/vendor/modernizr-latest.js")
 	body
@@ -17,7 +16,7 @@ html
 					h1 Julie Edwards
 					h2 Handmade Jewellery
 			div#navigation.row
-				div.navbar.navbar-default.shadow(role="nagivation")
+				div#navigationbar.navbar.navbar-default.shadow(role="nagivation")
 					div.collapse.navbar-collapse.navbar-ex1-collapse
 						ul.nav.navbar-nav
 							li
@@ -26,12 +25,14 @@ html
 								a(href="#") Jewellery
 							li
 								a(href="/contact") Contact
-			div.row.col-lg-offset-1.col-lg-10
-				div.page-header
-					h3 #{subheading}&nbsp
-						br
-						small=subtext
-				block content
+			div#maincontent.row
+				div#sectionheading.row
+					div.page-header
+						h3 #{subheading}&nbsp
+							br
+							small=subtext
+				div#sectionbody.row
+					block content
 
 		script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
 		script(src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js")

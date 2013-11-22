@@ -1,77 +1,19 @@
-@font-face {
-    font-family: 'rns_cameliaregular';
-    src: url('../fonts/rns_camelia-webfont.eot');
-    src: url('../fonts/rns_camelia-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/rns_camelia-webfont.woff') format('woff'),
-         url('../fonts/rns_camelia-webfont.ttf') format('truetype'),
-         url('../fonts/rns_camelia-webfont.svg#rns_cameliaregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+// Core variables and mixins
+@import "bootstrap/variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "bootstrap/mixins.less";
+@import "custom/custom-mixins.less";
+@import "custom/custom-variables.less";
 
-}
+// Webfonts
+@import "custom/fonts.less";
 
-@import "/animation/animations.less";
-@import "/animation/slide-fade-in.less";
+// Animations
+@import "animation/animations.less";
+@import "animation/slide-fade-in.less";
 
+// Bootstrap
+@import "bootstrap/bootstrap.less";
 
-@julie-blue: #99c4bf;
-@julie-red: #e7183e;
-@julie-grey: #98a9a9;
-
-
-
-.julie-font (@size: 14px, @color: @julie-grey, @letter-spacing: 1px) {
-    font-weight: 100;
-    font-style: normal;
-    font-size: @size;
-    color: @color;
-	letter-spacing: @letter-spacing;
-}
-
-
-
-
-#heading-text {
-
-    h1 {
-        .julie-font(60px, @julie-blue, -2px);
-        .animation(slide-fade-in .5s linear .3s );
-        .animation-fill-mode(backwards);
-        margin-top: 0px;
-        margin-bottom: 0px;
-        position: relative;
-        /*top: -10px;
-        opacity: 0;*/
-    }
-
-    h2 {
-        .julie-font(40px, @julie-red);
-        .animation(slide-fade-in .5s linear .1s);
-        .animation-fill-mode(backwards);
-        margin-top: 0px;
-        margin-left: 21px;
-        margin-bottom: 0px;
-        position: relative;
-        /*top: -10px;
-    opacity: 0;*/
-    }
-}
-
-#heading {
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-
-#heading-image {
-	float: left; 
-	img{
-		margin-left: 5px;
-		height: 66px;
-	}
-}
-
-.shadow {
-    box-shadow: 0px 10px 20px @julie-grey;
-    border-bottom-width: 0px;
-}
-
+// Custom
+@import "custom/heading.less";
+@import "custom/content.less";
